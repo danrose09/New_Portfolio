@@ -1,13 +1,117 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 62.5%;
+  --font-large: 5rem;
+  --pink: #e94560;
+  --dark-blue: #041c32;
+  --cyan: #79dae8;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url(../public/images/compressed_stones.jpg);
+  background-position: bottom;
+  background-size: cover;
+  letter-spacing: 0.25rem;
+}
+
+.hero-title-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.hero-primary {
+  backface-visibility: hidden;
+}
+
+.hero-title {
+  display: block;
+  font-size: var(--font-large);
+  animation: fadeIn 2000ms ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-sub {
+  display: block;
+  font-size: 2rem;
+  animation: fadeIn 2000ms ease-out 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.hero-sub-pink {
+  display: inline-block;
+  color: var(--pink);
+}
+
+.hero-button {
+  transform: translateY(6rem);
+  border: 0.1rem whitesmoke solid;
+  font-size: 1.5rem;
+  width: 15rem;
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 9px;
+  transition: all 300ms ease-in-out;
+  letter-spacing: 0.1rem;
+  animation: fadeIn 2000ms ease-out 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.hero-button:hover {
+  background-color: var(--dark-blue);
+  border: 0.1rem var(--dark-blue) solid;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  padding: 1rem;
+  background-color: var(--dark-blue);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  padding-right: 1rem;
+  transition: all 300ms ease-out;
+  letter-spacing: 0.1rem;
+}
+
+.nav-item:hover {
+  color: var(--pink);
+  cursor: pointer;
 }

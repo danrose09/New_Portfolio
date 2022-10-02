@@ -1,24 +1,36 @@
 .btn {
-  transform: translateY(6rem);
   border: 0.1rem whitesmoke solid;
   font-size: 1.5rem;
   width: 15rem;
   padding: 0.5rem;
-  margin: auto;
-  border-radius: 9px;
-  transition: all 300ms ease-in-out;
+  border-radius: 3px;
   letter-spacing: 0.1rem;
-  animation: fadeIn 2000ms ease-out 1500ms;
-  animation-fill-mode: backwards;
+  box-shadow: $box-shadow-default;
+  text-align: center;
 }
 
 .btn:hover {
-  background-color: var(--dark-blue);
-  border: 0.1rem var(--dark-blue) solid;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: $box-shadow-hover;
 }
 
 .btn:active {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: $box-shadow-default;
+}
+
+.btn-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  width: 15rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid whitesmoke;
+  border-radius: 100px;
+  transform: translate(-50%, -50%) translateY(4rem);
+  transition: all 300ms ease-in-out;
+  animation: fadeIn 2000ms ease-out 1500ms;
+  animation-fill-mode: backwards;
+  text-align: center;
 }

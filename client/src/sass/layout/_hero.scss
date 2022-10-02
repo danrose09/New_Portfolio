@@ -1,12 +1,11 @@
 .hero {
   &__image {
     position: absolute;
-    background-image: url(../../../public/images/compressed_stones.jpg);
+    background-color: black;
     background-position: bottom;
     background-size: cover;
     width: 100%;
     height: 100%;
-    filter: opacity(85%) brightness(85%) blur(1.5px);
     z-index: -1;
   }
 
@@ -22,18 +21,20 @@
     &--main {
       display: block;
       font-size: $font-lg;
-      animation: fadeIn 2000ms ease-out;
+      // animation: fadeIn 2000ms ease-out;
     }
 
     &--sub {
       display: block;
       font-size: $font-md;
-      animation: fadeIn 2000ms ease-out 1500ms;
-      animation-fill-mode: backwards;
+
+      // animation-fill-mode: backwards;
 
       &--pink {
         display: inline-block;
-        color: $color-pink;
+        color: $color-green-neon;
+        animation: fadeIn 2500ms ease-out 1000ms;
+        animation-fill-mode: backwards;
       }
     }
   }

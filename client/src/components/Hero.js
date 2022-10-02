@@ -16,7 +16,9 @@ const Hero = () => {
           </span>
         </h1>
         <div className="btn-hero">
-          <span className="btn-hero__text">My Projects</span>
+          <span className="btn-hero__text">
+            My Projects <i class="fa-thin fa-arrow-right"></i>
+          </span>
         </div>
       </div>
     </section>

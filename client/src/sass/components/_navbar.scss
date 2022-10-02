@@ -1,9 +1,10 @@
 .navbar {
-  padding: 1rem;
-  background-color: $color-blue-dark;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  position: sticky;
+  padding: 1rem 1rem 1rem 0;
+  background-color: transparent;
+  top: 0px;
+  position: fixed;
   z-index: 100;
+
   &__nav-list {
     list-style: none;
     display: flex;
@@ -12,13 +13,22 @@
   }
 
   &__nav-item {
-    padding-right: 1rem;
+    padding: 0 1.5rem;
     transition: all 300ms ease-out;
-    letter-spacing: 0.1rem;
-
+    letter-spacing: 0.2rem;
+    font-family: $source-code-pro;
+    font-size: $font-xxs;
     &:hover {
-      color: $color-pink;
+      color: $color-green-neon;
       cursor: pointer;
     }
+  }
+
+  &__line {
+    position: absolute;
+    background-color: $color-cyan;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
   }
 }

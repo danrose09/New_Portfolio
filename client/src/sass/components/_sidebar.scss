@@ -1,0 +1,35 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  right: 0px;
+  height: 100vh;
+  width: 5rem;
+  color: whitesmoke;
+  z-index: 100;
+
+  &__items {
+    transform: translateY(20vh);
+  }
+
+  &__github {
+    margin-bottom: 1.5rem;
+    transform: translateX(5px);
+
+    &-icon {
+      height: 2rem;
+      transition: $transition-default;
+      &:hover {
+        color: $color-green-neon;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__email {
+    font-family: $source-code-pro;
+    letter-spacing: 0.1ch;
+    transform: rotate(90deg);
+  }
+}

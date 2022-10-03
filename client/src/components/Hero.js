@@ -15,6 +15,7 @@ const Hero = () => {
             full-stack developer
           </span>
         </h1>
+
         <div className="btn-hero">
           <span className="btn-hero__text">
             My Projects <i class="fa-thin fa-arrow-right"></i>

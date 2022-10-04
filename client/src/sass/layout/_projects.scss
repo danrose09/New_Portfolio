@@ -1,0 +1,39 @@
+.projects-hangman {
+  font-family: $source-code-pro;
+  color: $color-green-neon;
+
+  &__heading-primary {
+    text-transform: uppercase;
+    font-size: $font-mdlg;
+    font-weight: 200;
+    letter-spacing: 0.2ch;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__skills {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__drawing-box {
+    float: right;
+    margin-left: 0.5rem;
+    height: 20rem;
+    width: 20rem;
+    border: 1.5px solid $color-green-neon;
+    text-align: center;
+  }
+
+  &__drawing {
+    margin: auto;
+    padding-top: 3rem;
+    width: 90%;
+  }
+
+  &__drawing-text {
+    font-size: $font-md;
+    display: inline-block;
+  }
+}

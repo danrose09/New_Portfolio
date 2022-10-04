@@ -1,7 +1,6 @@
 .hero {
   &__image {
     position: absolute;
-    background-color: black;
     background-position: bottom;
     background-size: cover;
     width: 100%;
@@ -10,6 +9,7 @@
 
   &__heading-primary {
     position: absolute;
+    font-weight: 200;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -9,7 +9,7 @@ const Projects = () => {
         </h2>
 
         <h3 className="projects-hangman__skills u-margin-bottom-medium">
-          <em>JS React MongoDB Node Express</em>
+          <p>MERN STACK</p>
         </h3>
 
         <div className="row">

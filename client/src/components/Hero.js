@@ -2,23 +2,25 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="section-hero">
+    <section className="section-hero u-margin-bottom-section">
       <div className="hero">
         <div className="hero__image"></div>
         <h1 className="hero__heading-primary ">
-          <span className="hero__heading-primary--main">Hi, I'm Daniel.</span>
+          <span className="hero__heading-primary--main">DANIEL</span>
           <span className="hero__heading-primary--sub">
-            -an{" "}
+            {/* -an{" "}
             <span className="hero__heading-primary--sub hero__heading-primary--sub--pink">
-              apsiring
+              aspiring
             </span>{" "}
-            full-stack developer
+            full-stack developer */}
+            front-end developer
           </span>
         </h1>
 
         <div className="btn-hero">
           <p className="btn-hero__text">
-            My Projects <i class="fa-solid fa-arrow-right btn-hero__arrow"></i>
+            START
+            {/* START <i class="fa-solid fa-arrow-right btn-hero__arrow"></i> */}
           </p>
         </div>
       </div>

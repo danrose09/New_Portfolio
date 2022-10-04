@@ -1,4 +1,5 @@
 .hero {
+  line-height: 3ch;
   &__image {
     position: absolute;
     background-position: bottom;
@@ -19,7 +20,8 @@
 
     &--main {
       display: block;
-      font-size: $font-lg;
+      font-size: $font-xxl;
+      padding-bottom: 2rem;
       // animation: fadeIn 2000ms ease-out;
     }
 

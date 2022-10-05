@@ -4,3 +4,8 @@
   background-clip: text;
   color: transparent;
 }
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}

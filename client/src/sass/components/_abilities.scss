@@ -1,0 +1,24 @@
+.abilities {
+  &__box {
+    height: 20rem;
+    width: 20rem;
+    border: 3px solid whitesmoke;
+
+    &:hover {
+      transform: scale(105%);
+      border: 5px solid whitesmoke;
+      border-image: linear-gradient(yellow, red) 1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 1rem;
+  }
+}
+
+.row-abilities {
+  @include row;
+  justify-content: space-between;
+}

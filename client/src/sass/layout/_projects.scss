@@ -6,6 +6,8 @@
     letter-spacing: 0.2ch;
     margin: auto;
     text-align: center;
+
+    @include linear-gradient-text;
   }
 
   &__skills {

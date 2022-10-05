@@ -18,33 +18,29 @@
   box-shadow: $box-shadow-default;
 }
 
-.btn-hero {
-  position: absolute;
-  line-height: 1ch;
-  top: 50%;
-  left: 50%;
-  width: 15rem;
-  padding: 1rem;
-  letter-spacing: 0.1rem;
-  border: 1px solid transparent;
-  transform: translate(-50%, -50%) translateY(4rem);
-  // transition: all 300ms ease-out;
-  animation: fadeIn 2000ms ease-out 2500ms;
-  animation-fill-mode: backwards;
-  text-align: center;
+// .btn-hero {
+//   position: absolute;
+//   // top: 37%;
+//   left: 50%;
+//   width: 15rem;
+//   padding: 1rem;
+//   letter-spacing: 0.1rem;
+//   border: 1px solid transparent;
+//   transform: translate(-50%, -50%) translateY(4rem);
 
-  &__text {
-    font-size: $font-default;
-  }
+//   &__text {
+//     font-size: $font-default;
+//     transform: translateY(0.25rem);
+//     text-shadow: 2px 2px 2px blue;
+//   }
 
-  &:hover {
-    color: $color-green-neon;
-    border: 1px solid $color-green-neon;
-    cursor: pointer;
+//   &:hover {
+//     // color: $color-green-neon;
+//     // border: 1px solid $color-green-neon;
 
-    .btn-hero__arrow {
-      transition: all 300ms ease-out;
-      transform: rotate(90deg);
-    }
-  }
-}
+//     .btn-hero__arrow {
+//       transition: all 300ms ease-out;
+//       transform: rotate(90deg);
+//     }
+//   }
+// }

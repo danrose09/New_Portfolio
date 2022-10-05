@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="section-projects u-margin-bottom-section u-padding-x-section">
+    <section className="section-projects u-margin-bottom-section u-padding-section-x-lg">
       <div className="projects-hangman">
         <h2 className="projects-hangman__heading-primary ">
           1.Hangman Dictionary

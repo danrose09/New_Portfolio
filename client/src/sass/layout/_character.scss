@@ -2,11 +2,18 @@
   text-align: center;
   &__heading-main {
     font-size: $font-mdlg;
+
+    @include linear-gradient-text;
+  }
+
+  &__heading-sub {
+    letter-spacing: $sub-heading-letter-spacing;
+    text-shadow: $text-shadow-blue;
   }
 
   &__image-box {
     height: 30rem;
-    width: 20rem;
+    width: 25rem;
     border: 1px solid whitesmoke;
     margin: auto;
   }

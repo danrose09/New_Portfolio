@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Character from "./components/Character";
 import Projects from "./components/Projects";
@@ -9,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Navbar />
         <Hero />
         <Character />
         <Projects />

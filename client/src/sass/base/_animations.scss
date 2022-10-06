@@ -21,3 +21,13 @@
     opacity: 0;
   }
 }
+
+@keyframes moveRight {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    max-width: 100%;
+  }
+}

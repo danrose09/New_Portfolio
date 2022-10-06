@@ -6,4 +6,45 @@
   &__info {
     text-transform: uppercase;
   }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+
+  &__bar {
+    height: 1rem;
+    background: linear-gradient(to right, yellow, red);
+
+    &--1 {
+      animation: moveRight 1500ms ease-out;
+    }
+    &--2 {
+      animation: moveRight 1500ms ease-out 250ms;
+      animation-fill-mode: backwards;
+    }
+    &--3 {
+      animation: moveRight 1500ms ease-out 500ms;
+      animation-fill-mode: backwards;
+    }
+    &--4 {
+      animation: moveRight 1500ms ease-out 750ms;
+      animation-fill-mode: backwards;
+    }
+    &--5 {
+      animation: moveRight 1500ms ease-out 1000ms;
+      animation-fill-mode: backwards;
+    }
+    &--6 {
+      animation: moveRight 1500ms ease-out 1250ms;
+      animation-fill-mode: backwards;
+    }
+    &--7 {
+      animation: moveRight 1500ms ease-out 1500ms;
+      animation-fill-mode: backwards;
+    }
+    &--8 {
+      animation: moveRight 1500ms ease-out 1750ms;
+      animation-fill-mode: backwards;
+    }
+  }
 }

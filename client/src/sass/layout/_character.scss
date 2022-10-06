@@ -2,13 +2,14 @@
   text-align: center;
   &__heading-main {
     font-size: $font-mdlg;
-
+    text-transform: uppercase;
     @include linear-gradient-text;
   }
 
   &__heading-sub {
     letter-spacing: $sub-heading-letter-spacing;
     text-shadow: $text-shadow-blue;
+    font-size: 1.5rem;
   }
 
   &__image-box {
@@ -16,6 +17,11 @@
     width: 25rem;
     border: 1px solid whitesmoke;
     margin: auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: 75%;
   }
 
   &__grid-1 {

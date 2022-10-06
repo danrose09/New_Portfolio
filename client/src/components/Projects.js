@@ -13,18 +13,13 @@ const Projects = () => {
         </h3>
 
         <div className="row">
-          <div className="projects-hangman__drawing-box">
-            {/* <pre>'''
-  +---+ \\
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-========='''</pre> */}
-            <div className="projects-hangman__drawing">
-              <i class="fa-solid fa-robot fa-7x"></i>
-            </div>
+          <div className="projects-hangman__image-box">
+            <img
+              className="projects-hangman__image"
+              src="images/hangman.jpg"
+              alt="Hangman"
+            ></img>
+
             <p className="projects-hangman__drawing-text">h a n g _ a n</p>
           </div>
           <p className="projects-hangman__description">

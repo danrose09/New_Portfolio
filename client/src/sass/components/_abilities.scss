@@ -20,5 +20,6 @@
 
 .row-abilities {
   @include row;
+  margin-top: 10rem;
   justify-content: space-between;
 }

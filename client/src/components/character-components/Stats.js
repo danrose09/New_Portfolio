@@ -1,13 +1,25 @@
-import React from "react";
+import React, { Fragment, useEffect } from "react";
 import stats from "../../data/stats";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Stats = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const allStats = stats.map((stat, index) => {
     return (
-      <p className="stats__info" key={index}>
-        <i className={`${stat.icon} fa-2x`}></i>
-        {stat.name}: {stat.value}
-      </p>
+      <Fragment>
+        <p className="stats__info" key={index}>
+          <i className={`${stat.icon} fa-2x stats__icon`}></i>
+          {stat.name}
+        </p>
+        <div
+          className={`stats__bar  stats__bar--${index + 1}`}
+          style={{ width: `${stat.value}%` }}
+        ></div>
+      </Fragment>
     );
   });
 

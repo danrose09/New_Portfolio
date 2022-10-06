@@ -1,10 +1,7 @@
 .hero {
   &__heading-primary {
-    position: absolute;
+    padding-top: 5rem;
     font-weight: 200;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     backface-visibility: hidden;
@@ -20,22 +17,11 @@
     &--sub {
       display: block;
       font-size: $font-md;
-
-      // animation-fill-mode: backwards;
-
-      &--pink {
-        display: inline-block;
-        color: $color-green-neon;
-        animation: fadeIn 2500ms ease-out 1000ms;
-        animation-fill-mode: backwards;
-      }
     }
   }
 
   &__copyright {
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 12rem;
+    text-align: center;
   }
 }

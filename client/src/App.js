@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <main>
         <Hero />
+
         <Character />
+
         <Projects />
         <Contact />
         <Footer />

@@ -1,8 +1,8 @@
 .navbar {
-  position: absolute;
-  top: 60%;
-  left: 51%;
-  transform: translate(-50%, -50%);
+  &__nav {
+    width: 30%;
+    margin: auto;
+  }
 
   &__nav-list {
     list-style: none;
@@ -12,7 +12,7 @@
   }
 
   &__nav-item {
-    text-align: left;
+    text-align: center;
     text-shadow: 2px 2px 2px $color-blue;
     text-transform: uppercase;
     padding: 1rem;

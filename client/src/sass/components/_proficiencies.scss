@@ -1,6 +1,37 @@
+.proficiencies-container {
+  width: 50rem;
+  height: auto;
+  border: 3px solid whitesmoke;
+  padding: 2rem 4rem;
+  margin: auto;
+
+  &:hover {
+    @include scale-plus-border-color;
+  }
+}
+
 .proficiencies {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
   text-align: left;
-  text-transform: uppercase;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    text-transform: uppercase;
+  }
+
+  &__name {
+    padding: 0.5rem 0;
+
+    &:hover {
+      @include linear-gradient-text;
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    float: right;
+  }
 }

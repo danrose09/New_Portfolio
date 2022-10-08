@@ -11,7 +11,9 @@ const Abilities = () => {
             src={ability.img}
             alt="ability"
           ></img>
-          <p className="abilities__name">{ability.name}</p>
+          <div className="abilities__text-box">
+            <p className="abilities__name">{ability.name}</p>
+          </div>
         </div>
       );
     }
@@ -20,6 +22,7 @@ const Abilities = () => {
 
   return (
     <div className="abilities u-padding-section-x-md">
+      <h4 className="character__heading-sub">Abilities</h4>
       <div className="row-abilities u-margin-bottom-medium">
         {abilities1to3}
       </div>

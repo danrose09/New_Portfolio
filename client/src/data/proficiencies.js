@@ -1,5 +1,6 @@
 const proficiencies = [
   "JavaScript",
+  "TypeScript",
   "Node",
   "Express",
   "HTML",

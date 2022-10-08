@@ -9,3 +9,9 @@
   display: flex;
   flex-direction: row;
 }
+
+@mixin scale-plus-border-color {
+  transform: scale(105%);
+  border: 5px solid whitesmoke;
+  border-image: linear-gradient(yellow, red) 1;
+}

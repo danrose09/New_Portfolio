@@ -15,10 +15,10 @@ const Character = () => {
   //   observer.observe(myRef.current);
   // }, []);
   return (
-    <section className="section-character u-padding-section-x-sm u-margin-bottom-section">
+    <section className="section-character u-padding-section-x-md u-margin-bottom-section">
       <div className="character">
         <h3 className="character__heading-main">Character Selection</h3>
-        <div className="character__grid-1">
+        <div className="character__grid-1 u-margin-bottom-medium">
           <div className="character__stats">
             <h4 className={`character__heading-sub`}>STATS</h4>
 
@@ -30,18 +30,17 @@ const Character = () => {
               src="images/me-2-nes.png"
               alt="Site author"
             ></img>
-            <p>Daniel</p>
-            <p>Lvl 1</p>
-            <p>Front-End Dev</p>
-          </div>
-          <div className="character__proficiencies">
-            <h4 className="character__heading-sub">PROFICIENCIES</h4>
-            <Proficiencies />
+            <p className="character__text">Daniel</p>
+            <p className="character__text">Lvl 1</p>
+            <p className="character__text">Front-End Dev</p>
           </div>
         </div>
-        <div className="character__grid-2">
+        <div className="character__grid-2 u-margin-bottom-medium">
           <Abilities />
         </div>
+        {/* <div className="character__grid-3">
+          <Proficiencies />
+        </div> */}
       </div>
     </section>
   );

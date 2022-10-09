@@ -1,4 +1,4 @@
-.projects-hangman {
+.projects {
   &__heading-primary {
     text-transform: uppercase;
     font-size: $font-mdlg;
@@ -48,5 +48,10 @@
   &__drawing-text {
     font-size: $font-md;
     display: inline-block;
+  }
+
+  &__description {
+    line-height: 2rem;
+    color: blue;
   }
 }

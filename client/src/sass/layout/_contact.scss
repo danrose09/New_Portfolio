@@ -1,0 +1,23 @@
+.contact__computer {
+  &--monitor {
+    height: 35rem;
+    width: 50rem;
+    border: 3px solid whitesmoke;
+    margin: 0 auto;
+  }
+
+  &--keyboard {
+    height: 25rem;
+    width: 70rem;
+    border: 3px solid whitesmoke;
+    margin: auto;
+  }
+
+  &--mouse {
+    height: 15rem;
+    width: 10rem;
+    border: 3px solid whitesmoke;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+}

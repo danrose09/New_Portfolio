@@ -2,24 +2,22 @@ import React from "react";
 
 const Speed = () => {
   return (
-    <div className="projects-speed">
-      <h2 className="projects-hangman__heading-primary ">2.Speed</h2>
+    <div className="projects">
+      <h2 className="projects__heading-primary ">2.Speed</h2>
 
-      <h3 className="projects-hangman__skills u-margin-bottom-medium">
-        <p className="projects-hangman__stack-desc">
-          Javascript CSS React Bootstrap
-        </p>
+      <h3 className="projects__skills u-margin-bottom-medium">
+        <p className="projects__stack-desc">Javascript CSS React Bootstrap</p>
       </h3>
 
       <div className="row">
-        <div className="projects-hangman__image-box">
+        <div className="projects__image-box">
           <img
-            className="projects-hangman__image"
-            src="images/hangman.jpg"
+            className="projects__image"
+            src="images/retro-card.png"
             alt="Hangman"
           ></img>
         </div>
-        <p className="projects-hangman__description">
+        <p className="projects__description">
           I'm baby pop-up kale chips farm-to-table DIY la croix plaid lo-fi
           cold-pressed. Gatekeep gastropub pitchfork sriracha chia mukbang cred
           lomo brunch iceland. Raclette twee hell of af, lo-fi small batch vape
@@ -27,7 +25,7 @@ const Speed = () => {
           single-origin coffee bespoke pabst venmo organic taxidermy poutine
           irony scenester truffaut.
         </p>
-        <p className="projects-hangman__description">
+        <p className="projects__description">
           Thundercats neutra vice readymade plaid raw denim aesthetic raclette
           echo park shoreditch. Gastropub actually sustainable chartreuse DSA,
           chicharrones kitsch next level ugh. Irony scenester intelligentsia
@@ -37,7 +35,7 @@ const Speed = () => {
           cliche. Everyday carry selvage keffiyeh green juice bitters af freegan
           tonx VHS shaman etsy man braid food truck.
         </p>
-        <p className="projects-hangman__description">
+        <p className="projects__description">
           Man braid meggings cornhole woke, kale chips yuccie leggings portland
           mumblecore drinking vinegar coloring book truffaut. Ramps forage
           salvia selfies, mukbang enamel pin tonx helvetica chartreuse mlkshk

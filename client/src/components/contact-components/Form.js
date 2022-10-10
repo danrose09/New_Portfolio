@@ -1,20 +1,27 @@
 import React from "react";
 
 const Form = () => {
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log("Form submitted successfully");
+  };
   return (
     <div>
-      <form className="form">
+      <form id="contact-form" onSubmit={submitForm} className="form">
         <div className="form__group">
           <label className="form__label">Name</label>
-          <input className="form__input"></input>
+          <input type="text" className="form__input"></input>
         </div>
         <div className="form__group">
           <label className="form__label">Email</label>
-          <input className="form__input"></input>
+          <input type="email" className="form__input"></input>
         </div>
         <div className="form__group">
           <label className="form__label">Message</label>
-          <input className="form__input form__input--message"></input>
+          <textarea
+            type="textarea"
+            className="form__input form__input--message"
+          ></textarea>
         </div>
       </form>
     </div>

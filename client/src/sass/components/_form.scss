@@ -10,17 +10,24 @@
 
   &__input {
     background-color: transparent;
+    height: 2rem;
     color: blue;
-    border: none;
+    border: 1px solid whitesmoke;
     font-family: $old-school;
     margin-top: 0.3rem;
 
     &--message {
       height: 10rem;
+      max-height: 10rem;
+      max-width: 100%;
     }
 
-    &:active {
-      border: none;
+    &:focus {
+      outline: none;
     }
+  }
+
+  &__label {
+    text-shadow: $text-shadow-blue;
   }
 }

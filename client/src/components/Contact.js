@@ -5,6 +5,7 @@ import KeyboardRow3 from "./contact-components/KeyboardRow3";
 import KeyboardRow4 from "./contact-components/KeyboardRow4";
 import KeyboardRow5 from "./contact-components/KeyboardRow5";
 import Monitor from "./contact-components/Monitor";
+import Mouse from "./contact-components/Mouse";
 
 const Contact = () => {
   return (
@@ -20,7 +21,7 @@ const Contact = () => {
             <KeyboardRow4 />
             <KeyboardRow5 />
           </div>
-          <div className="contact__computer--mouse"></div>
+          <Mouse />
         </div>
       </div>
     </section>

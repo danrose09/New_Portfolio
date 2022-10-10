@@ -46,7 +46,7 @@ export const keyboardRow3 = [
   [":", ";"],
   ["'"],
   ["|"],
-  [""],
+  ["Del"],
 ];
 
 export const keyboardRow4 = [

@@ -9,10 +9,10 @@
   &--monitor-inner {
     height: 30rem;
     width: calc(50rem - (50rem / 7));
-    border: 3px solid whitesmoke;
+    border: 2px solid blue;
     margin: 2.2rem auto;
     border-radius: 20px;
-    padding: 5rem;
+    padding: 2rem;
   }
 
   // &--monitor-stand {
@@ -41,14 +41,6 @@
       margin-bottom: 1rem;
     }
   }
-
-  &--mouse {
-    height: 15rem;
-    width: 10rem;
-    border: 3px solid whitesmoke;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-  }
 }
 
 .contact__keyboard {
@@ -62,6 +54,8 @@
 
     &:hover {
       cursor: pointer;
+      @include linear-border;
+      @include linear-gradient-text;
     }
 
     &:active {
@@ -81,9 +75,11 @@
 
   &--key-row2-13 {
     font-size: 0.5em;
+    font-family: inherit;
     width: 6.5rem;
-    border-bottom: none;
-    box-shadow: 2px 0 blue;
+    @include linear-border;
+    @include linear-gradient-text;
+    box-shadow: 2px 4px blue;
   }
 
   //Row 3
@@ -91,9 +87,7 @@
     width: 7rem;
   }
   &--key-row3-13 {
-    transform: translateY(-10px);
     width: 5rem;
-    border-top: none;
   }
 
   //Row 4

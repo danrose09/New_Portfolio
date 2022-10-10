@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: blue;
+    border: none;
+    font-family: $old-school;
+    margin-top: 0.3rem;
+
+    &--message {
+      height: 10rem;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}

@@ -1,16 +1,45 @@
 .contact__computer {
-  &--monitor {
+  &--monitor-outer {
     height: 35rem;
     width: 50rem;
     border: 3px solid whitesmoke;
-    margin: 0 auto;
+    margin: 2rem auto 2rem auto;
   }
+
+  &--monitor-inner {
+    height: 30rem;
+    width: calc(50rem - (50rem / 7));
+    border: 3px solid whitesmoke;
+    margin: 2.2rem auto;
+    border-radius: 20px;
+    padding: 5rem;
+  }
+
+  // &--monitor-stand {
+  //   height: 7rem;
+  //   width: 30rem;
+  //   border: 3px solid whitesmoke;
+  //   margin: auto;
+  //   position: relative;
+  //   background-color: black;
+
+  //   clip-path: polygon(20% 0%, 80% 0%, 100% 25%, 0 25%);
+  // }
 
   &--keyboard {
     height: 25rem;
     width: 70rem;
     border: 3px solid whitesmoke;
     margin: auto;
+    padding: 1rem;
+  }
+
+  &--keyboard-row {
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 
   &--mouse {
@@ -19,5 +48,77 @@
     border: 3px solid whitesmoke;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
+  }
+}
+
+.contact__keyboard {
+  &--key {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.2rem;
+    border: 1px solid whitesmoke;
+    letter-spacing: 0;
+    box-shadow: 2px 4px blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: 1.5px 3px blue;
+      transform: translateY(1px);
+    }
+  }
+
+  &--key-13 {
+    width: 8rem;
+  }
+
+  //Row 2
+  &--key-row2-0 {
+    width: 6rem;
+  }
+
+  &--key-row2-13 {
+    font-size: 0.5em;
+    width: 6.5rem;
+    border-bottom: none;
+    box-shadow: 2px 0 blue;
+  }
+
+  //Row 3
+  &--key-row3-0 {
+    width: 7rem;
+  }
+  &--key-row3-13 {
+    transform: translateY(-10px);
+    width: 5rem;
+    border-top: none;
+  }
+
+  //Row 4
+  &--key-row4-0 {
+    width: 8rem;
+  }
+
+  &--key-row4-11 {
+    width: 10rem;
+  }
+
+  //Row 5
+  &--key-row5-0,
+  &--key-row5-6 {
+    width: 6rem;
+  }
+
+  &--key-row5-1,
+  &--key-row5-2,
+  &--key-row5-4,
+  &--key-row5-5 {
+    width: 5rem;
+  }
+
+  &--key-row5-3 {
+    width: 30rem;
   }
 }

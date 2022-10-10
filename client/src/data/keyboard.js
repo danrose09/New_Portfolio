@@ -1,4 +1,4 @@
-const keyboardRow1 = [
+export const keyboardRow1 = [
   ["~", "`"],
   ["!", "1"],
   ["@", "2"],
@@ -15,8 +15,9 @@ const keyboardRow1 = [
   ["<--"],
 ];
 
-const keyboardRow2 = [
-  ["Tab"]["Q"],
+export const keyboardRow2 = [
+  ["Tab"],
+  ["Q"],
   ["W"],
   ["E"],
   ["R"],
@@ -29,4 +30,46 @@ const keyboardRow2 = [
   ["{", "["],
   ["}", "]"],
   ["Enter"],
+];
+
+export const keyboardRow3 = [
+  ["Caps Lock"],
+  ["A"],
+  ["S"],
+  ["D"],
+  ["F"],
+  ["G"],
+  ["H"],
+  ["J"],
+  ["K"],
+  ["L"],
+  [":", ";"],
+  ["'"],
+  ["|"],
+  [""],
+];
+
+export const keyboardRow4 = [
+  ["Shift"],
+  ["Z"],
+  ["X"],
+  ["C"],
+  ["V"],
+  ["B"],
+  ["N"],
+  ["M"],
+  ["<", ","],
+  [">", "."],
+  ["?", "/"],
+  ["Shift"],
+];
+
+export const keyboardRow5 = [
+  ["Ctrl"],
+  ["Win"],
+  ["Alt"],
+  [""],
+  ["Alt"],
+  ["Win"],
+  ["Ctrl"],
 ];

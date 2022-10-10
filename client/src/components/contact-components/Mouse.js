@@ -7,6 +7,7 @@ const Mouse = () => {
         <div className="mouse__buttons--left"></div>
         <div className="mouse__buttons--right"></div>
       </div>
+      <div className="mouse__bottom"></div>
     </div>
   );
 };

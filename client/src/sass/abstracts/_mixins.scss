@@ -20,3 +20,8 @@
   border: 1px solid whitesmoke;
   border-image: linear-gradient(yellow, red) 1;
 }
+
+@mixin linear-border-mouse {
+  border: 3px solid whitesmoke;
+  border-image: linear-gradient(yellow, red) 1;
+}

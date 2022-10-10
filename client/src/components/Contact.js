@@ -9,7 +9,7 @@ import Mouse from "./contact-components/Mouse";
 
 const Contact = () => {
   return (
-    <section className="section-contact">
+    <section className="section-contact u-margin-bottom-section">
       <h3 className="projects__heading-primary">Contact Me</h3>
       <div className="contact__computer">
         <Monitor />

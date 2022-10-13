@@ -13,6 +13,13 @@
     font-size: 1.5rem;
   }
 
+  &__stats {
+    @include respond(phone) {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
   &__image-box {
     height: 50rem;
     width: 40rem;
@@ -25,6 +32,19 @@
     &:hover .character__text {
       @include linear-gradient-text;
     }
+
+    @include respond(tab-port) {
+      height: 40rem;
+      width: 33.3rem;
+      margin-top: 6rem;
+    }
+
+    @include respond(phone) {
+      height: 35rem;
+      width: 28rem;
+      margin-bottom: 5rem !important;
+      margin: auto;
+    }
   }
 
   &__image {
@@ -35,9 +55,20 @@
   &__grid-1 {
     display: grid;
     grid-template-columns: 50% 50%;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__grid-2 {
     display: grid;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
   }
 }

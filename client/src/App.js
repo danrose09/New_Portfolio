@@ -1,20 +1,13 @@
-import Hero from "./components/Hero";
-import Character from "./components/Character";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import MainScreen from "./screens/MainScreen";
 
 function App() {
   return (
     <div className="App">
       <main>
-        <Hero />
-
-        <Character />
-
-        <Projects />
-        <Contact />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<MainScreen />}></Route>
+        </Routes>
       </main>
     </div>
   );

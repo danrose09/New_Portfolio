@@ -47,4 +47,16 @@
       animation-fill-mode: backwards;
     }
   }
+
+  @include respond(tab-land) {
+    margin-right: 2rem;
+  }
+
+  @include respond(tab-port) {
+    margin-right: 2rem;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }

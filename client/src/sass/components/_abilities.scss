@@ -10,6 +10,10 @@
     &:hover .abilities__name {
       @include linear-gradient-text;
     }
+
+    @include respond(phone) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__image {
@@ -23,10 +27,20 @@
     width: 100%;
     vertical-align: middle;
   }
+
+  @include respond(phone) {
+    margin: auto;
+  }
 }
 
 .row-abilities {
   @include row;
   margin-top: 3rem;
   justify-content: space-between;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

@@ -15,7 +15,7 @@ const Character = () => {
   //   observer.observe(myRef.current);
   // }, []);
   return (
-    <section className="section-character u-padding-section-x-md u-margin-bottom-section">
+    <section className="section-character u-margin-bottom-section">
       <div className="character">
         <h3 className="character__heading-main">Character Selection</h3>
         <div className="character__grid-1 u-margin-bottom-medium">

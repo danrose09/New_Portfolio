@@ -3,19 +3,34 @@
   width: 100%;
 }
 
-// .section-character {
+.section-character {
+  padding: $padding-section-x-md;
 
-// }
+  @include respond(tab-land) {
+    padding: 0 5rem;
+  }
 
-// .section-projects {
-//   height: 100vh;
-// }
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+}
+
+.section-projects {
+  padding: $padding-section-x-lg;
+
+  @include respond(tab-land) {
+    padding: 0 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+}
 
 // .section-contact {
 //   height: 100vh;
 // }
 
-.section-footer {
-  margin-top: 100rem;
-  height: 100vh;
-}
+// .section-footer {
+//   height: 100vh;
+// }

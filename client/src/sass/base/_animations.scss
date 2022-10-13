@@ -32,12 +32,8 @@
   }
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 760px;
+@keyframes typewriter {
+  to {
+    left: 100%;
   }
 }

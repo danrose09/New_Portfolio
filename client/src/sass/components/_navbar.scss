@@ -2,6 +2,10 @@
   &__nav {
     width: 30%;
     margin: auto;
+
+    @include respond(phone) {
+      width: 50%;
+    }
   }
 
   &__nav-list {

@@ -1,6 +1,18 @@
 .footer {
-  margin-top: 50vh;
+  height: 100vh;
+  position: relative;
   &__heading-primary {
     font-size: 8rem !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+
+  &__navbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
   }
 }

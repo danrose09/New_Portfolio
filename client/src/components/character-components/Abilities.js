@@ -8,8 +8,9 @@ const Abilities = () => {
         <div className="abilities__box">
           <img
             className="abilities__image"
-            src={ability.img}
+            src={ability.img ? ability.img : ""}
             alt="ability"
+            style={{ display: !ability.img && "none" }}
           ></img>
           <div className="abilities__text-box">
             <p className="abilities__name">{ability.name}</p>

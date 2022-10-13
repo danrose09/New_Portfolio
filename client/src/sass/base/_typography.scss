@@ -1,5 +1,21 @@
 :root {
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 45%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -7,4 +23,8 @@ body {
   font-weight: $font-weight-default;
   color: whitesmoke;
   letter-spacing: 0.2rem;
+
+  @include respond(phone) {
+    letter-spacing: 0.1rem;
+  }
 }

@@ -32,6 +32,12 @@
     &:hover {
       @include scale-plus-border-color;
     }
+
+    @include respond(tab-port) {
+      float: none;
+      margin: auto;
+      margin-bottom: 5rem;
+    }
   }
 
   &__image {
@@ -48,6 +54,12 @@
   &__drawing-text {
     font-size: $font-md;
     display: inline-block;
+  }
+
+  &__stack-desc {
+    @include respond(tab-land) {
+      line-height: 2.5rem;
+    }
   }
 
   &__description {

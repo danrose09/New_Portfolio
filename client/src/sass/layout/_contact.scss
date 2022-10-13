@@ -4,6 +4,13 @@
     width: 50rem;
     border: 3px solid whitesmoke;
     margin: 2rem auto 2rem auto;
+
+    @include respond(phone) {
+      height: calc(35rem / 1.1);
+      width: calc(50rem / 1.2);
+      margin: auto;
+      border: none;
+    }
   }
 
   &--monitor-inner {
@@ -13,18 +20,12 @@
     margin: 2.2rem auto;
     border-radius: 20px;
     padding: 2rem;
+
+    @include respond(phone) {
+      height: calc(30rem / 1.1);
+      width: calc((50rem - (50rem / 7)) / 1.2);
+    }
   }
-
-  // &--monitor-stand {
-  //   height: 7rem;
-  //   width: 30rem;
-  //   border: 3px solid whitesmoke;
-  //   margin: auto;
-  //   position: relative;
-  //   background-color: black;
-
-  //   clip-path: polygon(20% 0%, 80% 0%, 100% 25%, 0 25%);
-  // }
 
   &--keyboard {
     height: 25rem;
@@ -32,6 +33,10 @@
     border: 3px solid whitesmoke;
     margin: auto;
     padding: 1rem;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &--keyboard-row {

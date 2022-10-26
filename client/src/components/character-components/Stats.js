@@ -3,7 +3,8 @@ import stats from "../../data/stats";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Stats = () => {
+const Stats = (props) => {
+  const { elementIsVis } = props;
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -16,7 +17,9 @@ const Stats = () => {
           {stat.name}
         </p>
         <div
-          className={`stats__bar  stats__bar--${index + 1}`}
+          className={
+            elementIsVis ? `stats__bar  stats__bar--${index + 1}` : null
+          }
           style={{ width: `${stat.value}%` }}
         ></div>
       </Fragment>
